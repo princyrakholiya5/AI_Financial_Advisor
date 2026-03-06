@@ -1,4 +1,4 @@
-from google import genai
+import google.generativeai as genai
 import os
 
 # 1. INITIALIZE THE CLIENT
@@ -36,4 +36,5 @@ def get_financial_advice(income, expenses, savings):
 
 # Example usage (for testing):
 if __name__ == "__main__":
+
     print(get_financial_advice(5000, 3000, 10000))
