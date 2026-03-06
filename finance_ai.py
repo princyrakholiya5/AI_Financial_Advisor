@@ -3,7 +3,7 @@ import os
 
 # 1. INITIALIZE THE CLIENT
 # It is best to replace "YOUR_API_KEY" with the actual key you just got.
-client = genai.Client(api_key="AIzaSyApviOTFoJYht1218U5Z9ijH2W6Sv25vBs")
+genai.configure(api_key="AIzaSyApviOTFoJYht1218U5Z9ijH2W6Sv25vBs")
 
 def get_financial_advice(income, expenses, savings):
     """
@@ -38,3 +38,4 @@ def get_financial_advice(income, expenses, savings):
 if __name__ == "__main__":
 
     print(get_financial_advice(5000, 3000, 10000))
+
